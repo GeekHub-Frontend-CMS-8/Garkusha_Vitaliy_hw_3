@@ -1,0 +1,17 @@
+.wide{
+	width: 700px;
+	margin: auto;
+}
+li {
+	list-style-type: none;
+	padding: 3px 0px;
+}
+ul {
+    padding-left: 0; 
+   }
+legend {
+	font-weight: bold;
+}
+fieldset { 
+   margin-bottom: 20px;
+}

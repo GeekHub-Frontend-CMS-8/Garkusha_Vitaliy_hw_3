@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+  <html lang="ru">
+  <head>
+    <meta charset="utf-8"> 
+    <title>My forms</title>
+    <link rel="stylesheet" type="text/css" href="css/forms.css">
+  </head>
+  <body>
+    <div class="wide">
+    <form action="">
+      <fieldset>
+        <legend>Коротко о себе</legend>
+        <ul>
+          <li><label>Имя: <input type="text" name="firstname"></label></li>
+          <li><label>Фамилия: <input type="text" name="lastname"></label></li>
+          <li>Пол:<label><input type="radio" name="gender" value="male" checked>мужской</label>
+                  <label><input type="radio" name="gender" value="female">женский</label></li>
+          <li><label>Возраст: <input type="text" name="age" size="4">лет</label></li> 
+        </ul>     
+      </fieldset>
+
+      <fieldset>
+        <legend>Подробнее о себе</legend>
+        <ul>
+          <li><label><input type="radio" name="ygender" value="youngMan" checked>Молодой человек</label></li>
+          <li><label><input type="radio" name="ygender" value="girl">Девушка</label></li>
+          <li><label><input type="text" name="birthDate">Дата рождения</label></li>
+          <li><label><input type="text" name="familStatus">Семейное положение</label></li>
+          <li><label><input type="text" name="socialStatus">Социальный статус</label></li>          
+          <li><label><input type="text" name="livingPlace">Местожительство</label></li>
+        </ul>     
+
+        <h4>Что вы обычно делаете на выходных:</h4>
+        <ul>
+          <li><label><input type="checkbox" name="do1" value="Sleeping">Сплю</label></li>
+          <li><label><input type="checkbox" name="do2" value="Walking">Гуляю с друзьями</label></li>
+          <li><label><input type="checkbox" name="do3" value="Fishing">Хожу на рыбалку</label></li>          
+          <li><label><input type="checkbox" name="do4" value="Playing">Играю в игры</label></li>
+        </ul> 
+
+        <h4>Рассказать о формах в книге, посвященной HTML:</h4> 
+        <select>
+          <option value="site">Site frequency</option>
+          <option value="byte">Byte frequency</option>
+          <option value="ride">Ride frequency</option>
+          <option value="guide">Guide frequency</option>
+        </select>
+
+        <h4>Сколько книг вы прочитали за свою жизнь?</h4>
+        <ul>
+          <li><label><input type="radio" name="books" value="010">0-10</label></li>
+          <li><label><input type="radio" name="books" value="1120">11-20</label></li>
+          <li><label><input type="radio" name="books" value="2150">21-50</label></li>
+          <li><label><input type="radio" name="books" value="50">50+</label></li>
+        </ul>
+        <label>Ваши комментарии:
+        <textarea name="Ваши комментарии:" rows="11" cols="60">
+        </textarea></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>И в заключении</legend>
+        <ul>
+          <li><label><input type="text" name="Field" size="33" placeholder="Это поле было введено до вас"></label></li>
+          <li><label>Email:<input type="text" name="email" size="33"></label></li>
+        </ul>     
+        <h4>Хотите подписаться на самую модную рассылку спама?</h4>
+        <h4><i>Выберите категории</i></h4>
+        <ul>
+          <li><label><input type="checkbox" name="cat1" value="equipment">Оборудование</label></li>
+          <li><label><input type="checkbox" name="cat2" value="Walking">Как приготовить обеды</label></li>
+          <li><label><input type="checkbox" name="cat3" value="Fishing">Заработай миллион за два дня!</label></li>          
+        </ul> 
+        <h4>На сколько сложная задача:</h4>
+        <ul>
+          <li><label><input type="radio" name="difficulty" value="no" checked>Совсем нет</label></li>
+          <li><label><input type="radio" name="difficulty" value="soso">Так себе</label></li>
+          <li><label><input type="radio" name="difficulty" value="yes">Еле справились</label></li>
+        </ul>
+      </fieldset>
+      <input type="submit" formmethod="post" value="Отправить">
+    </form>
+  </div>
+  </body>
+</html>
